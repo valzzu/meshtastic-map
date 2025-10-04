@@ -146,17 +146,21 @@
         <div class="flex flex-col h-full">
 
             <!-- announcement -->
+            <!--
             <div v-if="isShowingAnnouncement" class="flex bg-gray-900 text-white p-2 border-gray-300 border-b">
 
+                
                 <!-- info -->
-                <div class="my-auto leading-tight">
+                <!--
+                 <div class="my-auto leading-tight">
                     <div class="font-bold">Introducing MeshCore</div>
                     <div class="text-sm">
                         <span>Looking for a new mesh project to tinker with? Check out <a target="_blank" href="https://meshcore.nz" class="underline">MeshCore</a></span>
                     </div>
                 </div>
-
+                
                 <!-- action buttons -->
+                <!--
                 <div class="flex my-auto ml-auto mr-0 sm:mr-2">
                     <a @click="dismissAnnouncement" href="javascript:void(0)" class="rounded-full">
                         <div class="bg-white text-black hover:bg-gray-100 p-2 rounded-full">
@@ -168,6 +172,8 @@
                 </div>
 
             </div>
+            
+            
 
             <!-- header -->
             <div class="flex bg-white p-2 border-gray-300 border-b h-16">
@@ -433,23 +439,25 @@
                                         <div class="bg-gray-100 rounded p-2 border border-gray-200">
                                             <div class="font-semibold">What MQTT server should I use?</div>
                                             <ul class="list-disc list-inside">
-                                                <li>Address: mqtt.meshtastic.liamcottle.net</li>
-                                                <li>Username: uplink</li>
-                                                <li>Password: uplink</li>
+                                                <li>Address: mqtt.meshtastic.org</li>
+                                                <li>Username: mehdev</li>
+                                                <li>Password: large4cats</li>
                                                 <li>Encryption Enabled: Yes</li>
                                                 <li>JSON Output: No</li>
-                                                <li>TLS Enabled: No</li>
+                                            </ul>
+                                            <div>or if u prefer not to use the public broker</div>
+                                            <ul class="list-disc list-inside">
+                                                <li>Address: mqtt.meshtastic.org</li>
+                                                <li>Username: mehdev</li>
+                                                <li>Password: large4cats</li>
+                                                <li>Encryption Enabled: Yes</li>
+                                                <li>JSON Output: No</li>
                                             </ul>
                                             <div>Please note, nodes can only uplink to this server. Downlink is disabled.</div>
                                             <div>We suggest running dedicated nodes for uplinking to the map.</div>
                                         </div>
                                         <div class="bg-gray-100 rounded p-2 border border-gray-200">
-                                            <div class="font-semibold">How do I remove my node from the map?</div>
-                                            <div>Nodes that have not been heard for 7 days are automatically removed.</div>
-                                            <div>Disable position reporting in your node to prevent it coming back.</div>
-                                            <div>Use custom encryption keys so the public can't see your position data.</div>
-                                            <div>If your node has v2.5 firmware or newer, we ignore packets if "OK to MQTT" is disabled.</div>
-                                            <div>To have your node removed now, please <a target="_blank" href="https://liamcottle.com/contact" class="link">contact me</a>.</div>
+                                            <div>To have your node removed, please <a href="_blank" href="mailto:someone@example.com" class="link">contact me</a>.</div>
                                         </div>
                                         <div class="bg-gray-100 rounded p-2 border border-gray-200">
                                             <div class="font-semibold">How do I see neighbours a node heard?</div>
